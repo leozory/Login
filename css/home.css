@@ -1,0 +1,154 @@
+/*set general font-family type, background-image for other elements*/
+/*where necessary child elements redefine their unique properties*/
+body { margin: 0; padding: 0; font-size: 16px; color: #777;
+	   font-family: Tahoma, Geneva, sans-serif;
+		color:#fff;
+	   background:url(../images/home.jpg) no-repeat center center fixed;
+	   background-size: cover;
+	  -webkit-background-size: cover;
+  	  -moz-background-size: cover;
+  	  -o-background-size: cover;
+  	  background-size: 100% 100%;
+}
+/*remove bulllets from the list of nav option*/
+/*let the nav bar display inline*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+/*container for sign-up using input for registration or 
+	through social media account*/
+/*sing-up inherits properties from body*/
+.signup{
+	background: rgb(44,62,80,0.7);
+	padding: 40px;
+	width:250px;
+	height:430px;
+	margin-left: 180px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+/*sign-up by registration aor social media is a type of form*/
+/*form receives information from input*/
+form {
+	width: 240px;
+	text-align: center;
+}
+/*signup by registration requires some input from the user*/
+/*Input section should have uniform design, fonts and layout*/
+
+input{
+
+	width:240px;
+	text-align:center;
+	background: transparent;
+	border-bottom: 1px solid #fff;
+	font-family: "Play", sans-serif;
+	font-size: 16px;
+	font-weight: 200px;
+	transition:border 0.5s;
+	outline: none;
+	color:#fff ;
+	padding: 10px 0px;
+}
+/*sing-up submit button design to have an oval shape*/
+/*sing-up submit button has new properties and
+  inherits other properties from input*/
+
+input[type=submit]{
+	width:190px;
+	background:white;
+	color: #000; /*black*/
+	font-size:16px;
+	line-height: 25px;
+	padding: 10px, 0px;
+	border-radius: 15px;
+	cursor:pointer;
+	margin-bottom: 5px;
+	}
+
+/*add a hover effect to sign-up button*/
+
+input[type=submit]:hover,
+input[type=submit]:focus {
+							background : #55ACEE;
+							transition: 0.2s ;
+							opacity: 0.7;
+						}
+
+
+/*add a hover effect to login button*/
+.hoverlogin:hover {
+  opacity: 0.7;
+}
+
+/*Have container for using social media to sign up*/
+.right-box{
+	position: absolute;
+	box-sizing: border-box;
+	padding: 5px;
+	width: 250px;
+	margin-left: 550px;
+	margin-bottom: 40px;
+	height: 100px;
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+
+/* Style all font awesome icons with oval shapes*/
+.fa {
+  padding: 8px;
+  margin: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%; /*Oval shape*/
+}
+/* Add a hover effect to social media icons*/
+.fa:hover {
+  opacity: 0.7;
+}
+
+ /*Give Facebook its custom color */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+  /* Give Twitter is custom color */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+/* Give Instagram is custom color */
+.fa-instagram {
+  background: #FB3958;
+  color: white;
+}
